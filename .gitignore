@@ -27,6 +27,19 @@ loadavg
 make
 *.o
 
+# Visual Studio artifacts
+_UpgradeReport_Files/*
+UpgradeLog.*
+Backup/*
+*.user
+*.ncb
+*.suo
+*.sbr
+*sdf
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+
 # Distribution artifacts
 .dep_segment
 Makefile.DOS
