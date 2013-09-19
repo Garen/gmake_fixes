@@ -41,14 +41,14 @@ typedef struct
 void GMK_EXPORT gmk_free (char *str);
 
 /* Allocate memory in GNU make's context.  */
-char * GMK_EXPORT gmk_alloc (unsigned int len);
+char GMK_EXPORT * gmk_alloc (unsigned int len);
 
 /* Run $(eval ...) on the provided string BUFFER.  */
 void GMK_EXPORT gmk_eval (const char *buffer, const gmk_floc *floc);
 
 /* Run GNU make expansion on the provided string STR.
    Returns an allocated buffer that the caller must free with gmk_free().  */
-char * GMK_EXPORT gmk_expand (const char *str);
+char GMK_EXPORT * gmk_expand (const char *str);
 
 /* Register a new GNU make function NAME (maximum of 255 chars long).
    When the function is expanded in the makefile, FUNC will be invoked with

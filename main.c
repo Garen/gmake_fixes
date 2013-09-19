@@ -64,7 +64,7 @@ void verify_file_data_base (void);
 # define HAVE_WAIT_NOHANG
 #endif
 
-#ifndef HAVE_UNISTD_H
+#if defined(HAVE_DIRECT_H) && !defined(HAVE_UNISTD_H)  /* Windows has chdir() in <direct.h> */
 int chdir ();
 #endif
 #ifndef STDC_HEADERS
