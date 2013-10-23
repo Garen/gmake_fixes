@@ -48,7 +48,7 @@ make-[0-9]*.tar.*
 # Visual Studio artifacts
 _UpgradeReport_Files/*
 UpgradeLog.*
-Backup/*
+Backup[1-9]*/*
 *.user
 *.ncb
 *.suo
@@ -57,3 +57,4 @@ Backup/*
 [Bb]in
 [Dd]ebug*/
 [Rr]elease*/
+.cov/
